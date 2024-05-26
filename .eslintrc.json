@@ -1,0 +1,39 @@
+{
+  "extends": ["plugin:@typescript-eslint/base"],
+  "ignorePatterns": ["coverage/**", "dist/**", "node_modules/**", "*.json", "*.lock", "*.yaml", "*.md", "*.svg"],
+  "rules": {
+    "@typescript-eslint/no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTaggedTemplates": true,
+        "allowTernary": true
+      }
+    ],
+    "no-restricted-properties": [
+      "error",
+      {
+        "message": "Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting",
+        "object": "require",
+        "property": "ensure"
+      },
+      {
+        "message": "Please use import() instead. More info: https://facebook.github.io/create-react-app/docs/code-splitting",
+        "object": "System",
+        "property": "import"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["tests/**/*.ts"],
+      "extends": ["plugin:jest/recommended", "plugin:jest/style"]
+    },
+    {
+      "files": ["scripts/**/*.?(m|c)js"],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
+}

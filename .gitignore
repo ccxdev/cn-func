@@ -1,0 +1,7 @@
+/.vscode/
+/dist/
+coverage
+node_modules/
+.DS_Store
+*.local
+.idea
