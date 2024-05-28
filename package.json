@@ -1,6 +1,6 @@
 {
   "name": "cn-func",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple helper function to merge class names using clsx and tailwind-merge.",
   "scripts": {
     "build": "rollup --config configs/rollup.config.mjs",
@@ -30,6 +30,10 @@
     "tailwindcss",
     "tailwind",
     "css",
+    "func",
+    "cn-func",
+    "merge-classnames",
+    "classname-function",
     "classes",
     "className",
     "classList",

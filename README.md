@@ -34,4 +34,4 @@ This package uses the following libraries under the hood:
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the CC0 1.0 Universal (CC0 1.0) Public Domain Dedication. You can see the license [here](LICENSE).
